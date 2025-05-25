@@ -6,10 +6,10 @@ This project implements machine learning techniques to predict earthquake magnit
 
 ### Key Features
 
-- **Multiple ML Models**: Implementation and comparison of Linear Regression (LR), Support Vector Regression (SVR), and Random Forest Regression (RFR)
-- **Comprehensive Analysis**: Detailed evaluation of model performance with visualizations
-- **Data Preprocessing**: Robust handling of missing values and feature engineering
-- **Easy Reproducibility**: Well-documented code with clear instructions
+- **Multiple ML Models**: Implementation and comparison of Linear Regression (LR), Support Vector Regression (SVR), and Random Forest Regression (RFR).
+- **Comprehensive Analysis**: Detailed evaluation of model performance with visualizations.
+- **Data Preprocessing**: Robust handling of missing values and feature engineering.
+- **Easy Reproducibility**: Well-documented code with clear instructions.
 
 ## 🔍 Motivation
 
