@@ -1,7 +1,5 @@
 # 🌍 Earthquake Magnitude Prediction
 
-![Earthquake Banner](https://www.usgs.gov/sites/default/files/images/22_0429_CA_GlobalEarthquakes_1200x675.jpg)
-
 ## 📊 Project Overview
 
 This project implements machine learning techniques to predict earthquake magnitudes using historical seismic data. By leveraging advanced regression algorithms, we aim to develop accurate predictive models that could potentially contribute to early warning systems and risk assessment strategies.
@@ -36,7 +34,16 @@ The analysis is performed on the `Earthquake Data.csv` dataset which includes hi
 
 After rigorous testing and evaluation, our comparative analysis revealed:
 
-![Model Comparison](https://i.imgur.com/JNZqJdk.png)
+![Model Comparison](results/Results.png)
+
+| Model              | MSE       | RMSE     | R² Score |
+|--------------------|-----------|----------|----------|
+| Linear Regression  | 0.177406  | 0.421196 | 0.078254 |
+| SVM                | 0.181780  | 0.426357 | 0.055528 |
+| Random Forest      | 0.137559  | 0.370890 | 0.285286 |
+
+
+Among the three models evaluated—Linear Regression, SVM, and Random Forest—the Random Forest model performs the best.
 
 **Key findings:**
 - **Random Forest Regression (RFR)** demonstrated superior performance with the highest R² score and lowest error metrics
@@ -46,16 +53,28 @@ After rigorous testing and evaluation, our comparative analysis revealed:
 ## 📊 Visualizations
 
 ### Feature Importance
-![Feature Importance](https://i.imgur.com/qV2nFNh.png)
+![Feature Importance](results/Each%20feature%20vs%20Target%20variable.png)
 
-### Actual vs Predicted Magnitude
-![Prediction Results](https://i.imgur.com/aEGX0De.png)
+### Multilinear Regression
+![Multilinear Regression](results/Multilinear%20Regression.png)
 
-### Earthquake Distribution
-![Earthquake Distribution Map](https://i.imgur.com/W7vKCgL.png)
+### Residual Plot [Multilinear Regression]
+![Residual Plot [Multilinear Regression]](results/Residual%20Plot.png)
 
-### Error Distribution
-![Error Distribution](https://i.imgur.com/VjZ9XqP.png)
+### Support Vector Regression
+![Support Vector Regression](results/Support%20Vector%20Regression.png)
+
+### Residual Plot [Support Vector Regression]
+![Residual Plot [Support Vector Regression]](results/Rersidual%20Plot%20[svm].png)
+
+### Random Forest Regression
+![Random Forest Regression](results/Random%20Forest%20regression.png)
+
+### Residual Plot [Random Forest Regression]
+![Residual Plot [Random Forest Regression]](results/Residual%20Plot%20[%20RFR].png)
+
+### Feature Importance Plot [Random Forest Regression]
+![Feature Importance Plot [Random Forest Regression]](results/Fewature%20Referance%20Plot%20[RFR%20].png)
 
 ## 🛠️ Technologies Used
 
@@ -79,10 +98,7 @@ git clone https://github.com/Hari-Krishnan-N/EarthQuake-ML_Magnitude_Prediction_
 cd Earthquake-Magnitude-Prediction
 ```
 
-2. Install required dependencies:
-```bash
-pip install -r requirements.txt
-```
+2. Install required dependencies.
 
 3. Run the Jupyter Notebook:
 ```bash
@@ -113,22 +129,5 @@ jupyter notebook model_comparision.ipynb
 - Develop a web application for interactive visualization
 - Extend the analysis to specific geographic regions
 - Add time-series analysis for temporal patterns
-
-## 👨‍💻 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-
-## 🙏 Acknowledgments
-
-- United States Geological Survey (USGS) for earthquake data
-- The open-source community for providing essential libraries and tools
-- Academic research that has advanced the field of earthquake prediction
 
 ---
